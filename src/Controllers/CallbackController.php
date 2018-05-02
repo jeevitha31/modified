@@ -206,7 +206,7 @@ class CallbackController extends Controller
         {
             $this->paramsRequired[] = 'tid_payment';
         }
-        //$orderlanguage = 
+     
         
     }
 
@@ -510,6 +510,12 @@ class CallbackController extends Controller
         return $orderObj;
     }
     
+    
+    /**
+     * Build the mail subject and message for the Novalnet Technic Team
+     * 
+     * @return array
+     */
     function build_notification_message() {
 
     $subject = 'Critical error on shop system plentymarkets:seo: order not found for TID: ' . $this->aryCaptureParams['shop_tid'];
@@ -524,6 +530,11 @@ class CallbackController extends Controller
     }
 
     
+    /**
+     * Retrieves the order object from shop order ID
+     *
+     * @return object
+     */
     public function orderObject($orderId)
     {
 	  $orderId = (int)$orderId;
@@ -539,6 +550,13 @@ class CallbackController extends Controller
 				return $order_ref;
 		
 	}
+	
+	
+	/**
+     * Get the order language based on the order object
+     *
+     * @return string
+     */
 	public function orderLanguage($orderObj)
 	{
 		foreach($orderObj->properties as $property)
@@ -641,6 +659,12 @@ class CallbackController extends Controller
         return $this->twig->render('Novalnet::callback.callback', ['comments' => $templateData]);
     }
     
+    /**
+     * Handling communication breakup
+     *
+     * @param array $orderObj
+     * @return none
+	 */
     public function handleCommunicationBreak($orderObj)
     
     {
