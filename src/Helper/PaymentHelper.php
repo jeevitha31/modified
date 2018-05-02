@@ -362,9 +362,9 @@ class PaymentHelper
      * @param array $requestData
      * @return string
      */
-    public function getDisplayPaymentMethodName($requestData)
+    public function getDisplayPaymentMethodName($requestData,$lang)
     {
-		$lang = strtolower((string)$requestData['lang']);
+		//$lang = strtolower((string)$requestData['lang']);
 		 
         if ($requestData['invoice_type'])
         {
