@@ -247,10 +247,6 @@ class PaymentController extends Controller
             }
         }
 		$response = $this->paymentHelper->executeCurl($serverRequestData['data'], $serverRequestData['url']);
-         //~ $this->sessionStorage->getPlugin()->setValue('params', $serverRequestData['data']);
-         //~ $this->sessionStorage->getPlugin()->setValue('url', $serverRequestData['url']);
-         //~ return $this->response->redirectTo('place-order');
-        
         $responseData = $this->paymentHelper->convertStringToArray($response['response'], '&');
         $responseData['payment_id'] = (!empty($responseData['payment_id'])) ? $responseData['payment_id'] : $responseData['key'];
         $isPaymentSuccess = isset($responseData['status']) && in_array($responseData['status'], ['90','100']);
@@ -289,29 +285,23 @@ class PaymentController extends Controller
             return $this->response->redirectTo('checkout');
         }
     }
+    
+    /**
+     * Process the Redirect Payment
+     *
+     */
     public function redirectPayment()
     {
-	$requestData = $this->request->all();
-	
-	$paymentRequestData = $this->sessionStorage->getPlugin()->getValue('nnPaymentData');
-	
-	$orderNo = $this->sessionStorage->getPlugin()->getValue('nnOrderNo');
-	$paymentRequestData['order_no'] = $orderNo;
-   
-    $paymentUrl = $this->sessionStorage->getPlugin()->getValue('nnPaymentUrl');
-	
-   return $content = $this->twig->render('Novalnet::NovalnetPaymentRedirectForm', [
+		$requestData = $this->request->all();
+		$paymentRequestData = $this->sessionStorage->getPlugin()->getValue('nnPaymentData');
+		$orderNo = $this->sessionStorage->getPlugin()->getValue('nnOrderNo');
+		$paymentRequestData['order_no'] = $orderNo;
+		$paymentUrl = $this->sessionStorage->getPlugin()->getValue('nnPaymentUrl');
+		
+		return $content = $this->twig->render('Novalnet::NovalnetPaymentRedirectForm', [
                                                                'formData'     => $paymentRequestData,
                                                                 'nnPaymentUrl' => $paymentUrl
                                    ]);
-
                      
 	}
-    
-    
-    
-    
-    
-    
-    
 }

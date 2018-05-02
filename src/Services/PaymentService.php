@@ -592,8 +592,6 @@ class PaymentService
         return $this->webstoreHelper->getCurrentWebstoreConfiguration()->domainSsl . '/payment/novalnet/processPayment';
     }
     
-    
-    
     /**
     * Get the redirect payment process controller URL to be handled
     *
@@ -604,9 +602,6 @@ class PaymentService
         return $this->webstoreHelper->getCurrentWebstoreConfiguration()->domainSsl . '/payment/novalnet/redirectPayment';
     }
     
-    
-    
-
     /**
     * Get the Payment process URL by using Payment Key
     *

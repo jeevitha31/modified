@@ -26,8 +26,9 @@ use Plenty\Plugin\Log\Loggable;
 use Plenty\Plugin\Mail\Contracts\MailerContract;
 use Plenty\Modules\Order\Contracts\OrderRepositoryContract;
 use \Plenty\Modules\Authorization\Services\AuthHelper;
-use \stdClass;
 use Plenty\Plugin\Translation\Translator;
+use \stdClass;
+
 
 /**
  * Class CallbackController
@@ -57,11 +58,15 @@ class CallbackController extends Controller
      * @var transaction
      */
     private $transaction;
+    
      /**
      * @var paymentService
      */
     private $paymentService;
     
+    /**
+     * @var orderRepository
+     */
     private $orderRepository;
 
     /*
@@ -484,21 +489,16 @@ class CallbackController extends Controller
 				$mailNotification = $this->build_notification_message();
 				$message = $mailNotification['message'];
 				$subject = $mailNotification['subject'];
-				
-				$this->getLogger(__METHOD__)->error('mailnotification', $mailNotification['message']);
-				$this->getLogger(__METHOD__)->error('mailnotification', $mailNotification['subject']);
-				
-				
-				
+			
 				$mailer = pluginApp(MailerContract::class);
-               $mailer->sendHtml($message,'jeevitha_k@novalnetsolutions.com',$subject,[],[]);
+				$mailer->sendHtml($message,'jeevitha_k@novalnetsolutions.com',$subject,[],[]);
                 return $this->renderTemplate($mailNotification['message']);
 				}
 				
 			
 				 
 				$this->handleCommunicationBreak($order_ref);
-				return  $this->renderTemplate('communication break handled.');
+				return  $this->renderTemplate('Novalnet handlecommunication break executed successfully.');
 				
 			
 			}

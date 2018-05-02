@@ -48,7 +48,6 @@ class NovalnetOrderConfirmationDataProvider
   
 		$barzahlentoken =	(string)$sessionStorage->getPlugin()->getValue('cashtoken');
 		$testmode 		=	(string)$sessionStorage->getPlugin()->getValue('testmode');
-        //$orderno		=	$order['id'];
 		$payments		=	$paymentRepositoryContract->getPaymentsByOrderId($order['id']);
 		
         foreach($payments as $payment)
