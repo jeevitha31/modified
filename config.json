@@ -708,7 +708,7 @@
                 "novalnet_sofort_reference2": {
                     "type": "inputText",
                     "required": false,
-                    "label": "reference2Label",
+                    "label": "Config.reference2Label",
                     "options": {
 						"tooltip": "Config.novalnetReferenceTooltip",
 						"defaultValue": ""
@@ -793,9 +793,9 @@
                 "novalnet_paypal_reference2": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.novalnetReferenceTooltip",
+                    "label": "Config.reference2Label",
                     "options": {
-						"tooltip": "Config.reference2Label",
+						"tooltip": "Config.novalnetReferenceTooltip",
 						"defaultValue": ""
 						}
                 }
