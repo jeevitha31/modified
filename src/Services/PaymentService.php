@@ -527,7 +527,7 @@ class PaymentService
             'implementation' => 'ENC',
             'uniqid'         => $requestData['uniqid']
         ];
-		$this->getLogger(__METHOD__)->error('directpaymentpostbackcall', $postbackData);
+
         if(in_array($requestData['payment_id'], ['27', '41']))
         {
             $productId = $requestData['product'];
