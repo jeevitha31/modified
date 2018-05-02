@@ -479,15 +479,15 @@
                         "checkBoxValues": [
                             {
                                 "value": "ref",
-                                "caption": "Config.paymentReferencePossibleValue-ref"
+                                "caption": "Config.invoicePaymentReferencePossibleValue-ref"
                             },
                             {
                                 "value": "tid",
-                                "caption": "Config.paymentReferencePossibleValue-tid"
+                                "caption": "Config.invoicePaymentReferencePossibleValue-tid"
                             },
                             {
                                 "value": "order_no",
-                                "caption": "Config.paymentReferencePossibleValue-order_no"
+                                "caption": "Config.invoicePaymentReferencePossibleValue-order_no"
                             }
                         ]
                     }
@@ -615,15 +615,15 @@
                         "checkBoxValues": [
                             {
                                 "value": "ref",
-                                "caption": "Config.paymentReferencePossibleValue-ref"
+                                "caption": "Config.prepaymentPaymentReferencePossibleValue-ref"
                             },
                             {
                                 "value": "tid",
-                                "caption": "Config.paymentReferencePossibleValue-tid"
+                                "caption": "Config.prepaymentPaymentReferencePossibleValue-tid"
                             },
                             {
                                 "value": "order_no",
-                                "caption": "Config.paymentReferencePossibleValue-order_no"
+                                "caption": "Config.prepaymentPaymentReferencePossibleValue-order_no"
                             }
                         ]
                     }
