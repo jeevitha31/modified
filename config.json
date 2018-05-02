@@ -640,7 +640,7 @@
                 "novalnet_prepayment_reference2": {
                     "type": "inputText",
                     "required": false,
-                    "label": "config.reference2Label",
+                    "label": "Config.reference2Label",
                     "options": {
 						"tooltip": "Config.novalnetPrepaymentReference2Tooltip",
 						"defaultValue": ""
