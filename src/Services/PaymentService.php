@@ -228,7 +228,7 @@ class PaymentService
     {
 		$lang = strtolower((string)$requestData['lang']);
 	
-        $comments  = '</br>' . $this->paymentHelper->getDisplayPaymentMethodName($requestData);
+        $comments  = '</br>' . $this->paymentHelper->getDisplayPaymentMethodName($requestData,$lang);
         $comments .= '</br>' . $this->paymentHelper->getTranslatedText('nn_tid',$lang) . $requestData['tid'];
 
         $paymentKey = strtolower((string) $this->paymentHelper->getPaymentKeyByMop($requestData['mop']));
