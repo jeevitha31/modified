@@ -277,7 +277,7 @@ class CallbackController extends Controller
 						
                         if ($nnTransactionHistory->order_paid_amount < $nnTransactionHistory->order_total_amount)
                         {
-							$this->getLogger(__METHOD__)->error('orderlang2', $orderLanguage);
+	
                             $callbackComments  = '</br>';
                             $callbackComments .= sprintf($this->paymentHelper->getTranslatedText('callback_initial_execution',$orderLanguage), $this->aryCaptureParams['shop_tid'], ($this->aryCaptureParams['amount'] / 100), $this->aryCaptureParams['currency'], date('Y-m-d H:i:s'), $this->aryCaptureParams['tid'] ).'</br>';
 
