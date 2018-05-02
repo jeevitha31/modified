@@ -479,7 +479,7 @@
                         "checkBoxValues": [
                             {
                                 "value": "ref",
-                                "caption": "Config.invoicePaymentReferencePossibleValue-ref"
+                                "caption": "Config.invoicePaymentReferencePossibleValueRef"
                             },
                             {
                                 "value": "tid",
