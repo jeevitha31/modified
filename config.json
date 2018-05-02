@@ -84,7 +84,7 @@
                 "cc_payment_active": {
                     "type": "checkBox",
                     "required": false,
-                    "label": "Config.ccPaymentActiveLabel",
+                    "label": "Config.paymentActiveLabel",
                     "options": {
 						"tooltip": "Config.ccPaymentActiveTooltip",
                         "defaultValue": false
@@ -93,7 +93,7 @@
                 "novalnet_cc_test_mode": {
                     "type": "checkBox",
                     "required": false,
-                    "label": "Config.novalnetCcTestModeLabel",
+                    "label": "Config.testModeLabel",
                     "options": {
 						"tooltip": "Config.novalnetCcTestModeTooltip",
                         "defaultValue": false
@@ -102,7 +102,7 @@
                 "cc_payment_name": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.ccPaymentNameLabel",
+                    "label": "Config.paymentNameLabel",
                     "options": {
 						"tooltip": "Config.ccPaymentNameTooltip",
 						"defaultValue": ""
@@ -138,7 +138,7 @@
                 "cc_on_hold": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.ccOnHoldLabel",
+                    "label": "Config.onHoldLabel",
                     "options": {
 						"tooltip": "Config.ccOnHoldTooltip",
 						"defaultValue": ""
@@ -147,7 +147,7 @@
                 "cc_order_completion_status": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.ccOrderCompletionStatusLabel",
+                    "label": "Config.orderCompletionStatusLabel",
                     "options": {
 						"tooltip": "Config.ccOrderCompletionStatusTooltip",
                         "defaultValue": "7.1"
@@ -156,7 +156,7 @@
                 "novalnet_cc_reference1": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.novalnetCcReference1Label",
+                    "label": "Config.reference1Label",
                     "options": {
 						"tooltip": "Config.novalnetCcReference1Tooltip",
 						"defaultValue": ""
@@ -165,7 +165,7 @@
                 "novalnet_cc_reference2": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.novalnetCcReference2Label",
+                    "label": "Config.reference2Label",
                     "options": {
 						"tooltip": "Config.novalnetCcReference2Tooltip",
 						"defaultValue": ""
@@ -278,7 +278,7 @@
                 "sepa_payment_active": {
                     "type": "checkBox",
                     "required": false,
-                    "label": "Config.sepaPaymentActiveLabel",
+                    "label": "Config.paymentActiveLabel",
                     "options": {
 						"tooltip": "Config.sepaPaymentActiveTooltip",
                         "defaultValue": false
@@ -287,7 +287,7 @@
                 "novalnet_sepa_test_mode": {
                     "type": "checkBox",
                     "required": false,
-                    "label": "Config.novalnetSepaTestModeLabel",
+                    "label": "Config.testModeLabel",
                     "options": {
 						"tooltip": "Config.novalnetSepaTestModeTooltip",
                         "defaultValue": false
@@ -296,7 +296,7 @@
                 "sepa_payment_name": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.sepaPaymentNameLabel",
+                    "label": "Config.paymentNameLabel",
                     "options": {
 						"tooltip": "Config.sepaPaymentNameTooltip",
 						"defaultValue": ""
@@ -323,7 +323,7 @@
                 "sepa_on_hold": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.sepaOnHoldLabel",
+                    "label": "Config.onHoldLabel",
                     "options": {
 						"tooltip": "Config.sepaOnHoldTooltip",
 						"defaultValue": ""
@@ -332,7 +332,7 @@
                 "sepa_order_completion_status": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.sepaOrderCompletionStatusLabel",
+                    "label": "Config.orderCompletionStatusLabel",
                     "options": {
 						"tooltip": "Config.sepaOrderCompletionStatusTooltip",
                         "defaultValue": "7.1"
@@ -341,7 +341,7 @@
                 "novalnet_sepa_reference1": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.novalnetSepaReference1Label",
+                    "label": "Config.reference1Label",
                     "options": {
 						"tooltip": "Config.novalnetSepaReference1Tooltip",
 						"defaultValue": ""
@@ -350,7 +350,7 @@
                 "novalnet_sepa_reference2": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.novalnetSepaReference2Label",
+                    "label": "Config.reference2Label",
                     "options": {
 						"tooltip": "Config.novalnetSepaReference2Tooltip",
 						"defaultValue": ""
@@ -359,7 +359,7 @@
                 "novalnet_sepa_payment_guarantee_active": {
                     "type": "checkBox",
                     "required": false,
-                    "label": "Config.novalnetSepaPaymentGuaranteeActiveLabel",
+                    "label": "Config.paymentGuaranteeActiveLabel",
                     "options": {
 						"tooltip": "Config.novalnetSepaPaymentGuaranteeActiveTooltip",
                         "defaultValue": false
@@ -368,7 +368,7 @@
                 "novalnet_sepa_guarantee_min_amount": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.novalnetSepaGuaranteeMinAmountLabel",
+                    "label": "Config.guaranteeMinAmountLabel",
                     "options": {
 						"tooltip": "Config.novalnetSepaGuaranteeMinAmountTooltip",
                         "defaultValue": "2000"
@@ -377,7 +377,7 @@
                 "novalnet_sepa_guarantee_max_amount": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.novalnetSepaGuaranteeMaxAmountLabel",
+                    "label": "Config.guaranteeMaxAmountLabel",
                     "options": {
 						"tooltip": "Config.novalnetSepaGuaranteeMaxAmountTooltip",
                         "defaultValue": "500000"
@@ -386,7 +386,7 @@
                 "novalnet_sepa_payment_guarantee_force_active": {
                     "type": "checkBox",
                     "required": false,
-                    "label": "Config.novalnetSepaPaymentGuaranteeForceActiveLabel",
+                    "label": "Config.paymentGuaranteeForceActiveLabel",
                     "options": {
 						"tooltip": "Config.novalnetSepaPaymentGuaranteeForceActiveTooltip",
                         "defaultValue": false
@@ -400,7 +400,7 @@
                 "invoice_payment_active": {
                     "type": "checkBox",
                     "required": false,
-                    "label": "Config.invoicePaymentActiveLabel",
+                    "label": "Config.paymentActiveLabel",
                     "options": {
 						"tooltip": "Config.invoicePaymentActiveTooltip",
                         "defaultValue": false
@@ -409,7 +409,7 @@
                 "novalnet_invoice_test_mode": {
                     "type": "checkBox",
                     "required": false,
-                    "label": "Config.novalnetInvoiceTestModeLabel",
+                    "label": "Config.testModeLabel",
                     "options": {
 						"tooltip": "Config.novalnetInvoiceTestModeTooltip",
                         "defaultValue": false
@@ -418,7 +418,7 @@
                 "invoice_payment_name": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.invoicePaymentNameLabel",
+                    "label": "Config.paymentNameLabel",
                     "options": {
 						"tooltip": "Config.invoicePaymentNameLTooltip",
 						"defaultValue": ""
@@ -445,7 +445,7 @@
                 "invoice_on_hold": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.invoiceOnHoldLabel",
+                    "label": "Config.onHoldLabel",
                     "options": {
 						"tooltip": "Config.invoiceOnHoldTooltip",
 						"defaultValue": ""
@@ -454,7 +454,7 @@
                 "invoiceorder_completion_status": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.invoiceorderCompletionStatusLabel",
+                    "label": "Config.orderCompletionStatusLabel",
                     "options": {
 						"tooltip": "Config.invoiceorderCompletionStatusTooltip",
                         "defaultValue": "7.1"
@@ -463,7 +463,7 @@
                 "invoice_callback_order_status": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.invoiceCallbackOrderStatusLabel",
+                    "label": "Config.callbackOrderStatusLabel",
                     "options": {
 						"tooltip": "Config.invoiceCallbackOrderStatusTooltip",
                         "defaultValue": "9.5"
@@ -472,22 +472,22 @@
                 "invoice_payment_reference": {
                     "type": "multiCheckBox",
                     "required": false,
-                    "label": "Config.invoicePaymentReferenceLabel",
+                    "label": "Config.paymentReferenceLabel",
                     "options": {
 						"tooltip": "Config.invoicePaymentReferenceTooltip",
                         "defaultValue": "all",
                         "checkBoxValues": [
                             {
                                 "value": "ref",
-                                "caption": "Config.invoicePaymentReferencePossibleValue-ref"
+                                "caption": "Config.paymentReferencePossibleValue-ref"
                             },
                             {
                                 "value": "tid",
-                                "caption": "Config.invoicePaymentReferencePossibleValue-tid"
+                                "caption": "Config.paymentReferencePossibleValue-tid"
                             },
                             {
                                 "value": "order_no",
-                                "caption": "Config.invoicePaymentReferencePossibleValue-order_no"
+                                "caption": "Config.paymentReferencePossibleValue-order_no"
                             }
                         ]
                     }
@@ -495,7 +495,7 @@
                 "novalnet_invoice_reference1": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.novalnetInvoiceReference1Label",
+                    "label": "Config.reference1Label",
                     "options": {
 						"tooltip": "Config.novalnetInvoiceReference1Tooltip",
 						"defaultValue": ""
@@ -504,7 +504,7 @@
                 "novalnet_invoice_reference2": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.novalnetInvoiceReference2Label",
+                    "label": "Config.reference2Label",
                     "options": {
 						"tooltip": "Config.novalnetInvoiceReference2Tooltip",
 						"defaultValue": ""
@@ -513,7 +513,7 @@
                 "novalnet_invoice_payment_guarantee_active": {
                     "type": "checkBox",
                     "required": false,
-                    "label": "Config.novalnetInvoicePaymentGuaranteeActiveLabel",
+                    "label": "Config.paymentGuaranteeActiveLabel",
                     "options": {
 						"tooltip": "Config.novalnetInvoicePaymentGuaranteeActiveTooltip",
                         "defaultValue": false
@@ -522,7 +522,7 @@
                 "novalnet_invoice_guarantee_min_amount": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.novalnetInvoiceGuaranteeMinAmountLabel",
+                    "label": "Config.guaranteeMinAmountLabel",
                     "options": {
 						"tooltip": "Config.novalnetInvoiceGuaranteeMinAmountTooltip",
                         "defaultValue": "2000"
@@ -531,7 +531,7 @@
                 "novalnet_invoice_guarantee_max_amount": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.novalnetInvoiceGuaranteeMaxAmountLabel",
+                    "label": "Config.guaranteeMaxAmountLabel",
                     "options": {
 						"tooltip": "Config.novalnetInvoiceGuaranteeMaxAmountTooltip",
                         "defaultValue": "500000"
@@ -540,7 +540,7 @@
                 "novalnet_invoice_payment_guarantee_force_active": {
                     "type": "checkBox",
                     "required": false,
-                    "label": "Config.novalnetInvoicePaymentGuaranteeForceActiveLabel",
+                    "label": "Config.paymentGuaranteeForceActiveLabel",
                     "options": {
 						"tooltip": "Config.novalnetInvoicePaymentGuaranteeForceActiveTooltip",
                         "defaultValue": false
@@ -554,7 +554,7 @@
                 "prepayment_payment_active": {
                     "type": "checkBox",
                     "required": false,
-                    "label": "Config.prepaymentPaymentActiveLabel",
+                    "label": "Config.paymentActiveLabel",
                     "options": {
 						"tooltip": "Config.prepaymentPaymentActiveTooltip",
                         "defaultValue": false
@@ -563,7 +563,7 @@
                 "novalnet_prepayment_test_mode": {
                     "type": "checkBox",
                     "required": false,
-                    "label": "Config.novalnetPrepaymentTestModeLabel",
+                    "label": "Config.testModeLabel",
                     "options": {
 						"tooltip": "Config.novalnetPrepaymentTestModeTooltip",
                         "defaultValue": false
@@ -572,7 +572,7 @@
                 "prepayment_payment_name": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.prepaymentPaymentNameLabel",
+                    "label": "Config.paymentNameLabel",
                     "options": {
 						"tooltip": "Config.prepaymentPaymentNameTooltip",
 						"defaultValue": ""
@@ -590,7 +590,7 @@
                 "prepayment_order_completion_status": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.prepaymentOrderCompletionStatusLabel",
+                    "label": "Config.orderCompletionStatusLabel",
                     "options": {
 						"tooltip": "Config.prepaymentOrderCompletionStatusTooltip",
                         "defaultValue": "7.1"
@@ -608,22 +608,22 @@
                 "prepayment_payment_reference": {
                     "type": "multiCheckBox",
                     "required": false,
-                    "label": "Config.prepaymentPaymentReferenceLabel",
+                    "label": "Config.paymentReferenceLabel",
                     "options": {
 						"tooltip": "Config.prepaymentPaymentReferenceTooltip",
                         "defaultValue": "all",
                         "checkBoxValues": [
                             {
                                 "value": "ref",
-                                "caption": "Config.prepaymentPaymentReferencePossibleValue-ref"
+                                "caption": "Config.paymentReferencePossibleValue-ref"
                             },
                             {
                                 "value": "tid",
-                                "caption": "Config.prepaymentPaymentReferencePossibleValue-tid"
+                                "caption": "Config.paymentReferencePossibleValue-tid"
                             },
                             {
                                 "value": "order_no",
-                                "caption": "Config.prepaymentPaymentReferencePossibleValue-order_no"
+                                "caption": "Config.paymentReferencePossibleValue-order_no"
                             }
                         ]
                     }
@@ -631,7 +631,7 @@
                 "novalnet_prepayment_reference1": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.novalnetPrepaymentReference1Label",
+                    "label": "Config.reference1Label",
                     "options": {
 						"tooltip": "Config.novalnetPrepaymentReference1Tooltip",
 						"defaultValue": ""
@@ -640,7 +640,7 @@
                 "novalnet_prepayment_reference2": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.novalnetPrepaymentReference2Label",
+                    "label": "reference2Label",
                     "options": {
 						"tooltip": "Config.novalnetPrepaymentReference2Tooltip",
 						"defaultValue": ""
@@ -654,7 +654,7 @@
                 "sofort_payment_active": {
                     "type": "checkBox",
                     "required": false,
-                    "label": "Config.sofortPaymentActiveLabel",
+                    "label": "Config.paymentActiveLabel",
                     "options": {
 						"tooltip": "Config.sofortPaymentActiveTooltip",
                         "defaultValue": false
@@ -663,7 +663,7 @@
                 "novalnet_sofort_test_mode": {
                     "type": "checkBox",
                     "required": false,
-                    "label": "Config.novalnetSofortTestModeLabel",
+                    "label": "Config.testModeLabel",
                     "options": {
 						"tooltip": "Config.novalnetSofortTestModeTooltip",
                         "defaultValue": false
@@ -672,7 +672,7 @@
                 "sofort_payment_name": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.sofortPaymentNameLabel",
+                    "label": "Config.paymentNameLabel",
                     "options": {
 						"tooltip": "Config.sofortPaymentNameTooltip",
 						"defaultValue": ""
@@ -690,7 +690,7 @@
                 "sofort_order_completion_status": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.sofortOrderCompletionStatusLabel",
+                    "label": "Config.orderCompletionStatusLabel",
                     "options": {
 						"tooltip": "Config.sofortOrderCompletionStatusTooltip",
                         "defaultValue": "7.1"
@@ -699,7 +699,7 @@
                 "novalnet_sofort_reference1": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.novalnetSofortReference1Label",
+                    "label": "Config.reference1Label",
                     "options": {
 						"tooltip": "Config.novalnetSofortReference1Tooltip",
 						"defaultValue": ""
@@ -708,7 +708,7 @@
                 "novalnet_sofort_reference2": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.novalnetSofortReference2Label",
+                    "label": "reference2Label",
                     "options": {
 						"tooltip": "Config.novalnetSofortReference2Tooltip",
 						"defaultValue": ""
@@ -722,7 +722,7 @@
                 "paypal_payment_active": {
                     "type": "checkBox",
                     "required": false,
-                    "label": "Config.paypalPaymentActiveLabel",
+                    "label": "Config.paymentActiveLabel",
                     "options": {
 						"tooltip": "Config.paypalPaymentActiveTooltip",
                         "defaultValue": false
@@ -731,7 +731,7 @@
                 "novalnet_paypal_test_mode": {
                     "type": "checkBox",
                     "required": false,
-                    "label": "Config.novalnetPaypalTestModeLabel",
+                    "label": "Config.testModeLabel",
                     "options": {
 							"tooltip": "Config.novalnetPaypalTestModeTooltip",
 							"defaultValue": false
@@ -740,7 +740,7 @@
                 "paypal_payment_name": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.paypalPaymentNameLabel",
+                    "label": "Config.paymentNameLabel",
                     "options": {
 							"tooltip": "Config.paypalPaymentNameTooltip",
 							"defaultValue": ""
@@ -758,7 +758,7 @@
                 "paypal_on_hold": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.paypalOnHoldLabel",
+                    "label": "Config.onHoldLabel",
                     "options": {
 							"tooltip": "Config.paypalOnHoldTooltip",
 							"defaultValue": ""}
@@ -766,7 +766,7 @@
                 "paypal_payment_pending_status": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.paypalPaymentPendingStatusLabel",
+                    "label": "Config.paymentPendingStatusLabel",
                     "options": {
 							"tooltip": "Config.paypalPaymentPendingStatusTooltip",
                         "defaultValue": "3"
@@ -775,7 +775,7 @@
                 "paypal_order_completion_status": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.paypalOrderCompletionStatusLabel",
+                    "label": "Config.orderCompletionStatusLabel",
                     "options": {
 							"tooltip": "Config.paypalOrderCompletionStatusTooltip",
                         "defaultValue": "7.1"
@@ -784,7 +784,7 @@
                 "novalnet_paypal_reference1": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.novalnetPaypalReference1Label",
+                    "label": "Config.reference1Label",
                     "options": {
 							"tooltip": "Config.novalnetPaypalReference1Tooltip",
 						"defaultValue": ""
@@ -795,7 +795,7 @@
                     "required": false,
                     "label": "Config.novalnetPaypalReference2Label",
                     "options": {
-						"tooltip": "Config.novalnetPaypalReference2Tooltip",
+						"tooltip": "Config.reference2Label",
 						"defaultValue": ""
 						}
                 }
@@ -807,7 +807,7 @@
                 "ideal_payment_active": {
                     "type": "checkBox",
                     "required": false,
-                    "label": "Config.idealPaymentActiveLabel",
+                    "label": "Config.paymentActiveLabel",
                     "options": {
 						"tooltip": "Config.idealPaymentActiveTooltip",
                         "defaultValue": false
@@ -816,7 +816,7 @@
                 "novalnet_ideal_test_mode": {
                     "type": "checkBox",
                     "required": false,
-                    "label": "Config.novalnetIdealTestModeLabel",
+                    "label": "Config.testModeLabel",
                     "options": {
 						"tooltip": "Config.novalnetIdealTestModeTooltip",
                         "defaultValue": false
@@ -825,7 +825,7 @@
                 "ideal_payment_name": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.idealPaymentNameLabel",
+                    "label": "Config.paymentNameLabel",
                     "options": {
 						"tooltip": "Config.idealPaymentNameTooltip",
 							"defaultValue": ""
@@ -843,7 +843,7 @@
                 "ideal_order_completion_status": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.idealOrderCompletionStatusLabel",
+                    "label": "Config.orderCompletionStatusLabel",
                     "options": {
 						"tooltip": "Config.idealOrderCompletionStatusTooltip",
                         "defaultValue": "7.1"
@@ -852,7 +852,7 @@
                 "novalnet_ideal_reference1": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.novalnetIdealReference1Label",
+                    "label": "Config.reference1Label",
                     "options": {
 						"tooltip": "Config.novalnetIdealReference1Tooltip",
 							"defaultValue": ""
@@ -861,7 +861,7 @@
                 "novalnet_ideal_reference2": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.novalnetIdealReference2Label",
+                    "label": "Config.reference2Label",
                     "options": {
 						"tooltip": "Config.novalnetIdealReference2Tooltip",
 							"defaultValue": ""
@@ -875,7 +875,7 @@
                 "eps_payment_active": {
                     "type": "checkBox",
                     "required": false,
-                    "label": "Config.epsPaymentActiveLabel",
+                    "label": "Config.paymentActiveLabel",
                     "options": {
 						"tooltip": "Config.epsPaymentActiveTooltip",
                         "defaultValue": false
@@ -884,7 +884,7 @@
                 "novalnet_eps_test_mode": {
                     "type": "checkBox",
                     "required": false,
-                    "label": "Config.novalnetEpsTestModeLabel",
+                    "label": "Config.testModeLabel",
                     "options": {
 						"tooltip": "Config.novalnetEpsTestModeTooltip",
                         "defaultValue": false
@@ -893,7 +893,7 @@
                 "eps_payment_name": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.epsPaymentNameLabel",
+                    "label": "Config.paymentNameLabel",
                     "options": {
 						"tooltip": "Config.epsPaymentNameTooltip",
 							"defaultValue": ""
@@ -911,7 +911,7 @@
                 "eps_order_completion_status": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.epsOrderCompletionStatusLabel",
+                    "label": "Config.orderCompletionStatusLabel",
                     "options": {
 						"tooltip": "Config.epsOrderCompletionStatusTooltip",
                         "defaultValue": "7.1"
@@ -920,7 +920,7 @@
                 "novalnet_eps_reference1": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.novalnetEpsReference1Label",
+                    "label": "Config.reference1Label",
                     "options": {
 						"tooltip": "Config.novalnetEpsReference1Tooltip",
 							"defaultValue": ""
@@ -929,7 +929,7 @@
                 "novalnet_eps_reference2": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.novalnetEpsReference2Label",
+                    "label": "Config.reference2Label",
                     "options": {
 						"tooltip": "Config.novalnetEpsReference2Tooltip",
 							"defaultValue": ""
@@ -943,7 +943,7 @@
                 "giropay_payment_active": {
                     "type": "checkBox",
                     "required": false,
-                    "label": "Config.giropayPaymentActiveLabel",
+                    "label": "Config.paymentActiveLabel",
                     "options": {
 						"tooltip": "Config.giropayPaymentActiveTooltip",
                         "defaultValue": false
@@ -952,7 +952,7 @@
                 "novalnet_giropay_test_mode": {
                     "type": "checkBox",
                     "required": false,
-                    "label": "Config.novalnetGiropayTestModeLabel",
+                    "label": "Config.testModeLabel",
                     "options": {
 						"tooltip": "Config.novalnetGiropayTestModeTooltip",
                         "defaultValue": false
@@ -961,7 +961,7 @@
                 "giropay_payment_name": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.giropayPaymentNameLabel",
+                    "label": "Config.paymentNameLabel",
                     "options": {
 						"tooltip": "Config.giropayPaymentNameTooltip",
 							"defaultValue": ""
@@ -979,7 +979,7 @@
                 "giropay_order_completion_status": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.giropayOrderCompletionStatusLabel",
+                    "label": "Config.orderCompletionStatusLabel",
                     "options": {
 						"tooltip": "Config.giropayOrderCompletionStatusTooltip",
                         "defaultValue": "7.1"
@@ -988,7 +988,7 @@
                 "novalnet_giropay_reference1": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.novalnetGiropayReference1Label",
+                    "label": "Config.reference1Label",
                     "options": {
 						"tooltip": "Config.novalnetGiropayReference1Tooltip",
 							"defaultValue": ""
@@ -997,7 +997,7 @@
                 "novalnet_giropay_reference2": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.novalnetGiropayReference2Label",
+                    "label": "Config.reference2Label",
                     "options": {
 						"tooltip": "Config.novalnetGiropayReference2Tooltip",
 							"defaultValue": ""
@@ -1011,7 +1011,7 @@
                 "przelewy_payment_active": {
                     "type": "checkBox",
                     "required": false,
-                    "label": "Config.przelewyPaymentActiveLabel",
+                    "label": "Config.paymentActiveLabel",
                     "options": {
 						"tooltip": "Config.przelewyPaymentActiveTooltip",
                         "defaultValue": false
@@ -1020,7 +1020,7 @@
                 "novalnet_przelewy_test_mode": {
                     "type": "checkBox",
                     "required": false,
-                    "label": "Config.novalnetPrzelewyTestModeLabel",
+                    "label": "Config.testModeLabel",
                     "options": {
 						"tooltip": "Config.novalnetPrzelewyTestModeTooltip",
                         "defaultValue": false
@@ -1029,7 +1029,7 @@
                 "przelewy_payment_name": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.przelewyPaymentNameLabel",
+                    "label": "Config.paymentNameLabel",
                     "options": {
 						"tooltip": "Config.przelewyPaymentNameTooltip",
 							"defaultValue": ""
@@ -1047,7 +1047,7 @@
                 "przelewy_payment_pending_status": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.przelewyPaymentPendingStatusLabel",
+                    "label": "Config.paymentPendingStatusLabel",
                     "options": {
 						"tooltip": "Config.przelewyPaymentPendingStatusTooltip",
                         "defaultValue": "3"
@@ -1056,7 +1056,7 @@
                 "przelewy_order_completion_status": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.przelewyOrderCompletionStatusLabel",
+                    "label": "Config.orderCompletionStatusLabel",
                     "options": {
 						"tooltip": "Config.przelewyOrderCompletionStatusTooltip",
                         "defaultValue": "7.1"
@@ -1065,7 +1065,7 @@
                 "novalnet_przelewy_reference1": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.novalnetPrzelewyReference1Label",
+                    "label": "Config.reference1Label",
                     "options": {
 						"tooltip": "Config.novalnetPrzelewyReference1Tooltip",
 							"defaultValue": ""
@@ -1074,7 +1074,7 @@
                 "novalnet_przelewy_reference2": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.novalnetPrzelewyReference2Label",
+                    "label": "Config.reference2Label",
                     "options": {
 						"tooltip": "Config.novalnetPrzelewyReference2Tooltip",
 							"defaultValue": ""
@@ -1088,7 +1088,7 @@
                 "cashpayment_payment_active": {
                     "type": "checkBox",
                     "required": false,
-                    "label": "Config.cashpaymentPaymentActiveLabel",
+                    "label": "Config.paymentActiveLabel",
                     "options": {
 						"tooltip": "Config.cashpaymentPaymentActiveTooltip",
                         "defaultValue": false
@@ -1097,7 +1097,7 @@
                 "novalnet_cashpayment_test_mode": {
                     "type": "checkBox",
                     "required": false,
-                    "label": "Config.novalnetCashpaymentTestModeLabel",
+                    "label": "Config.testModeLabel",
                     "options": {
 						"tooltip": "Config.novalnetCashpaymentTestModeTooltip",
                         "defaultValue": false
@@ -1106,7 +1106,7 @@
                 "cashpayment_payment_name": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.cashpaymentPaymentNameLabel",
+                    "label": "Config.paymentNameLabel",
                     "options": {
 						"tooltip": "Config.cashpaymentPaymentNameTooltip",
 							"defaultValue": ""
@@ -1132,7 +1132,7 @@
                 "cashpayment_order_completion_status": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.cashpaymentOrderCompletionStatusLabel",
+                    "label": "Config.orderCompletionStatusLabel",
                     "options": {
 						"tooltip": "Config.cashpaymentOrderCompletionStatusTooltip",
                         "defaultValue": "7.1"
@@ -1141,7 +1141,7 @@
                 "cashpayment_callback_order_status": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.cashpaymentCallbackOrderStatusLabel",
+                    "label": "Config.callbackOrderStatusLabel",
                     "options": {
 						"tooltip": "Config.cashpaymentCallbackOrderStatusTooltip",
                         "defaultValue": "9.5"
@@ -1150,7 +1150,7 @@
                 "novalnet_cashpayment_reference1": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.novalnetCashpaymentReference1Label",
+                    "label": "Config.reference1Label",
                     "options": {
 						"tooltip": "Config.novalnetCashpaymentReference1Tooltip",
 							"defaultValue": ""
@@ -1159,7 +1159,7 @@
                 "novalnet_cashpayment_reference2": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.novalnetCashpaymentReference2Label",
+                    "label": "Config.reference2Label",
                     "options": {
 						"tooltip": "Config.novalnetCashpaymentReference2Tooltip",
 							"defaultValue": ""
