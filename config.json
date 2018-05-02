@@ -111,7 +111,7 @@
                 "cc_description": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.ccDescriptionLabel",
+                    "label": "Config.paymentDescriptionLabel",
                     "options": {
 						"tooltip": "Config.ccDescriptionTooltip",
 						"defaultValue": ""
@@ -305,7 +305,7 @@
                 "sepa_description": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.sepaDescriptionLabel",
+                    "label": "Config.paymentDescriptionLabel",
                     "options": {
 						"tooltip": "Config.sepaDescriptionTooltip",
 						"defaultValue": ""
@@ -427,7 +427,7 @@
                 "invoice_description": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.invoiceDescriptionLabel",
+                    "label": "Config.paymentDescriptionLabel",
                     "options": {
 						"tooltip": "Config.invoiceDescriptionTooltip",
 						"defaultValue": ""
@@ -581,7 +581,7 @@
                 "prepayment_description": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.prepaymentDescriptionLabel",
+                    "label": "Config.paymentDescriptionLabel",
                     "options": {
 						"tooltip": "Config.prepaymentDescriptionTooltip",
 						"defaultValue": ""
@@ -681,7 +681,7 @@
                 "sofort_description": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.sofortDescriptionLabel",
+                    "label": "Config.paymentDescriptionLabel",
                     "options": {
 						"tooltip": "Config.sofortDescriptionTooltip",
 						"defaultValue": ""
@@ -749,7 +749,7 @@
                 "paypal_description": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.paypalDescriptionLabel",
+                    "label": "Config.paymentDescriptionLabel",
                     "options": {
 							"tooltip": "Config.paypalDescriptionTooltip",
 						"defaultValue": ""
@@ -834,7 +834,7 @@
                 "ideal_description": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.idealDescriptionLabel",
+                    "label": "Config.paymentDescriptionLabel",
                     "options": {
 						"tooltip": "Config.idealDescriptionTooltip",
 							"defaultValue": ""
@@ -902,7 +902,7 @@
                 "eps_description": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.epsDescriptionLabel",
+                    "label": "Config.paymentDescriptionLabel",
                     "options": {
 						"tooltip": "Config.epsDescriptionTooltip",
 							"defaultValue": ""
@@ -970,7 +970,7 @@
                 "giropay_description": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.giropayDescriptionLabel",
+                    "label": "Config.paymentDescriptionLabel",
                     "options": {
 						"tooltip": "Config.giropayDescriptionTooltip",
 							"defaultValue": ""
@@ -1038,7 +1038,7 @@
                 "przelewy_description": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.przelewyDescriptionLabel",
+                    "label": "Config.paymentDescriptionLabel",
                     "options": {
 						"tooltip": "Config.przelewyDescriptionTooltip",
 							"defaultValue": ""
@@ -1115,7 +1115,7 @@
                 "cashpayment_description": {
                     "type": "inputText",
                     "required": false,
-                    "label": "Config.cashpaymentDescriptionLabel",
+                    "label": "Config.paymentDescriptionLabel",
                     "options": {
 						"tooltip": "Config.cashpaymentDescriptionTooltip",
 							"defaultValue": ""}
