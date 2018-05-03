@@ -262,8 +262,10 @@ class CallbackController extends Controller
 	
 		
 		$orderob = $this->orderObject($nnTransactionHistory->orderNo); 
-		
+		$this->getLogger(__METHOD__)->error('callback:orderobject', $orderob);
 		$orderLanguage= $this->orderLanguage($orderob);
+		$this->getLogger(__METHOD__)->error('callback:orderlanguage', $orderLanguage);
+		 
 
 
             if($this->getPaymentTypeLevel() == 2 && $this->aryCaptureParams['tid_status'] == '100')
@@ -669,6 +671,7 @@ class CallbackController extends Controller
     
     {
 	    $orderlanguage = $this->orderLanguage($orderObj);
+	    $this->getLogger(__METHOD__)->error('callback:communicationbreakorderlang', $orderlanguage);
 	    
 		if(in_array($this->aryCaptureParams['payment_type'],array('PAYPAL', 'ONLINE_TRANSFER', 'IDEAL', 'GIROPAY', 'PRZELEWY24', 'EPS','CREDITCARD')))
 		foreach($orderObj->properties as $property)
