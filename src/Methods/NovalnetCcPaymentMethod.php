@@ -87,7 +87,7 @@ class NovalnetCcPaymentMethod extends PaymentMethodService
         $app = pluginApp(Application::class);
         if($this->configRepository->get('Novalnet.cc_amex_logo') == 'true')
         {
-			return $app->getUrlPath('novalnet') .'/images/amex.png';
+			return $app->getUrlPath('novalnet') .'/images/amexmastero.png';
 		}
 		if($this->configRepository->get('Novalnet.cc_cartasi_logo') == 'true')
         {
