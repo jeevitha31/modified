@@ -99,19 +99,19 @@ class NovalnetCcPaymentMethod extends PaymentMethodService
 		}
 		if($this->configRepository->get('Novalnet.cc_amex_logo') == 'true' && $this->configRepository->get('Novalnet.cc_mastero_logo') == 'true')
         {
-			return $app->getUrlPath('novalnet') .'/images/amexmastero.png';
+			return $app->getUrlPath('novalnet') .'/images/am.png';
 		}
-		if($this->configRepository->get('Novalnet.cc_cartasi_logo') == 'true' && $this->configRepository->get('Novalnet.cc_mastero_logo') == 'true')
+		if(($this->configRepository->get('Novalnet.cc_cartasi_logo') == 'true') && ($this->configRepository->get('Novalnet.cc_mastero_logo') == 'true'))
         {
-			return $app->getUrlPath('novalnet') .'/images/cartasi.png';
+			return $app->getUrlPath('novalnet') .'/images/banktransfer.png';
 		}
-		if($this->configRepository->get('Novalnet.cc_cartasi_logo') == 'true' && $this->configRepository->get('Novalnet.cc_amex_logo') == 'true')
+		if(($this->configRepository->get('Novalnet.cc_cartasi_logo') == 'true') && ($this->configRepository->get('Novalnet.cc_amex_logo') == 'true'))
         {
-			return $app->getUrlPath('novalnet') .'/images/amex.png';
+			return $app->getUrlPath('novalnet') .'/images/sepa.png';
 		}
 		if($this->configRepository->get('Novalnet.cc_amex_logo') == 'true' && $this->configRepository->get('Novalnet.cc_cartasi_logo')== 'true' && $this->configRepository->get('Novalnet.cc_mastero_logo')== 'true' )
         {
-			return $app->getUrlPath('novalnet') .'/images/amexmastero.png';
+			return $app->getUrlPath('novalnet') .'/images/eps.png';
 		}
 		if($this->configRepository->get('Novalnet.cc_amex_logo') == 'false' && $this->configRepository->get('Novalnet.cc_cartasi_logo')== 'false' && $this->configRepository->get('Novalnet.cc_mastero_logo')== 'false' )
         {
