@@ -89,6 +89,30 @@ class NovalnetCcPaymentMethod extends PaymentMethodService
         {
 			return $app->getUrlPath('novalnet') .'/images/amex.png';
 		}
+		if($this->configRepository->get('Novalnet.cc_cartasi_logo') == 'true')
+        {
+			return $app->getUrlPath('novalnet') .'/images/cartasi.png';
+		}
+		if($this->configRepository->get('Novalnet.cc_mastero_logo') == 'true')
+        {
+			return $app->getUrlPath('novalnet') .'/images/mastero.png';
+		}
+		if($this->configRepository->get('Novalnet.cc_amex_logo') == 'true' && $this->configRepository->get('Novalnet.cc_mastero_logo') == 'true')
+        {
+			return $app->getUrlPath('novalnet') .'/images/amexmastero.png';
+		}
+		if($this->configRepository->get('Novalnet.cc_cartasi_logo') == 'true' && $this->configRepository->get('Novalnet.cc_mastero_logo') == 'true')
+        {
+			return $app->getUrlPath('novalnet') .'/images/cartasi.png';
+		}
+		if($this->configRepository->get('Novalnet.cc_cartasi_logo') == 'true' && $this->configRepository->get('Novalnet.cc_amex_logo') == 'true')
+        {
+			return $app->getUrlPath('novalnet') .'/images/amex.png';
+		}
+		if($this->configRepository->get('Novalnet.cc_amex_logo') == 'true' && $this->configRepository->get('Novalnet.cc_cartasi_logo')== 'true' && $this->configRepository->get('Novalnet.cc_mastero_logo')== 'true' )
+        {
+			return $app->getUrlPath('novalnet') .'/images/icon.png';
+		}
 		if($this->configRepository->get('Novalnet.cc_amex_logo') == 'false' && $this->configRepository->get('Novalnet.cc_cartasi_logo')== 'false' && $this->configRepository->get('Novalnet.cc_mastero_logo')== 'false' )
         {
 			return $app->getUrlPath('novalnet') .'/images/cc.png';
