@@ -88,15 +88,15 @@ class NovalnetCcPaymentMethod extends PaymentMethodService
         
         if($this->configRepository->get('Novalnet.cc_amex_logo') == 'true' && $this->configRepository->get('Novalnet.cc_cartasi_logo')== 'true' && $this->configRepository->get('Novalnet.cc_mastero_logo')== 'true' )
 		{
-				return $app->getUrlPath('novalnet') .'/images/eps.png';
+				return $app->getUrlPath('novalnet') .'/images/cc.png';
 		}
 		elseif($this->configRepository->get('Novalnet.cc_amex_logo') == 'true' && $this->configRepository->get('Novalnet.cc_cartasi_logo') == 'true')
         {
-			return $app->getUrlPath('novalnet') .'/images/sepa.png';
+			return $app->getUrlPath('novalnet') .'/images/cartasi.png';
 		}
 		elseif($this->configRepository->get('Novalnet.cc_cartasi_logo') == 'true' && $this->configRepository->get('Novalnet.cc_mastero_logo') == 'true')
         {
-			return $app->getUrlPath('novalnet') .'/images/banktransfer.png';
+			return $app->getUrlPath('novalnet') .'/images/mastero.png';
 		}
 		elseif($this->configRepository->get('Novalnet.cc_amex_logo') == 'true' && $this->configRepository->get('Novalnet.cc_mastero_logo') == 'true')
         {
