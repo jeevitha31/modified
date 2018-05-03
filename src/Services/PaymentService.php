@@ -229,12 +229,12 @@ class PaymentService
 		$lang = strtolower((string)$requestData['lang']);
 	
         $comments  = '</br>' . $this->paymentHelper->getDisplayPaymentMethodName($requestData);
-        $comments .= '</br>' . $this->paymentHelper->getTranslatedText('nn_tid',$lang) . $requestData['tid'];
+        $comments .= '</br>' . $this->paymentHelper->getTranslatedText('nn_tid') . $requestData['tid'];
 
         $paymentKey = strtolower((string) $this->paymentHelper->getPaymentKeyByMop($requestData['mop']));
         $testModeKey = 'Novalnet.' . $paymentKey . '_test_mode';
         if(!empty($requestData['test_mode']) || ($this->config->get($testModeKey) == 'true'))
-            $comments .= '</br>' . $this->paymentHelper->getTranslatedText('test_order',$lang);
+            $comments .= '</br>' . $this->paymentHelper->getTranslatedText('test_order');
 
         if(in_array($requestData['payment_id'], ['40','41']))
             $comments .= '</br>' . $this->paymentHelper->getTranslatedText('guarantee_text');
