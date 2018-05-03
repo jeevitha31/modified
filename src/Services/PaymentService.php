@@ -229,12 +229,11 @@ class PaymentService
 		$lang = strtolower((string)$requestData['lang']);
 	
         $comments  = '</br>' . $this->paymentHelper->getDisplayPaymentMethodName($requestData);
-        $comments .= '</br>' . $this->paymentHelper->getTranslatedText('nn_tid') . $requestData['tid'];
-            $this->getLogger(__METHOD__)->error('comment1', $comments);
+        $comments .= '</br>' . $this->paymentHelper->getTranslatedText('nn_tid',$lang) . $requestData['tid'];
         $paymentKey = strtolower((string) $this->paymentHelper->getPaymentKeyByMop($requestData['mop']));
         $testModeKey = 'Novalnet.' . $paymentKey . '_test_mode';
         if(!empty($requestData['test_mode']) || ($this->config->get($testModeKey) == 'true'))
-            $comments .= '</br>' . $this->paymentHelper->getTranslatedText('test_order');
+            $comments .= '</br>' . $this->paymentHelper->getTranslatedText('test_order',$lang);
 
         if(in_array($requestData['payment_id'], ['40','41']))
             $comments .= '</br>' . $this->paymentHelper->getTranslatedText('guarantee_text');
@@ -242,7 +241,6 @@ class PaymentService
         if(in_array($requestData['payment_id'], ['27','41']))
         {
             $comments .= '</br>' . $this->getInvoicePrepaymentComments($requestData);
-		$this->getLogger(__METHOD__)->error('comment2', $comments);
         }
         else if($requestData['payment_id'] == '59')
         {
