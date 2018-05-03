@@ -130,6 +130,30 @@
                         "defaultValue": false
                     }
                 },
+                 "cc_amex_logo": {
+                    "type": "checkBox",
+                    "required": false,
+                    "label": "Config.ccamexlogoLabel",
+                    "options": {
+                        "defaultValue": false
+                    }
+                },
+                "cc_cartasi_logo": {
+                    "type": "checkBox",
+                    "required": false,
+                    "label": "Config.cccartasilogoLabel",
+                    "options": {
+                        "defaultValue": false
+                    }
+                },
+                "cc_mastero_logo": {
+                    "type": "checkBox",
+                    "required": false,
+                    "label": "Config.ccmasterologoLabel",
+                    "options": {
+                        "defaultValue": false
+                    }
+                },
                 "cc_on_hold": {
                     "type": "inputText",
                     "required": false,
