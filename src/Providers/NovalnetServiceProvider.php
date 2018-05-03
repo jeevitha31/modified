@@ -158,6 +158,12 @@ class NovalnetServiceProvider extends ServiceProvider
                 AfterBasketCreate::class
             ]);
             
+		 $eventProceduresService->registerProcedure('plenty_novalnet', ProcedureEntry::PROCEDURE_GROUP_ORDER, [
+            'de' => 'Rückzahlung der novalnet-Zahlung',
+            'en' => 'Refund the novalnet payment'
+        ], 'Novalnet\Procedures\RefundEventProcedure@run');
+
+
 
         // Listen for the event that gets the payment method content
         $eventDispatcher->listen(GetPaymentMethodContent::class,
@@ -201,6 +207,7 @@ class NovalnetServiceProvider extends ServiceProvider
                                 $sessionStorage->getPlugin()->setValue('nnPaymentData', array_merge($serverRequestData['data'], $responseData));
                                 $isPaymentSuccess = isset($responseData['status']) && in_array($responseData['status'], ['90','100']);
                                 $notifications = json_decode($sessionStorage->getPlugin()->getValue('notifications'));
+                                $this->getLogger(__METHOD__)->error('ExecutePayment serviceprovider.', $requestData);
                                 array_push($notifications,[
                                         'message' => $paymentHelper->getNovalnetStatusText($responseData),
                                         'type'    => $isPaymentSuccess ? 'success' : 'error',
@@ -265,8 +272,13 @@ class NovalnetServiceProvider extends ServiceProvider
                             $serverRequestData = $paymentService->getRequestParameters($basketRepository->load(), $paymentKey);
                             $sessionStorage->getPlugin()->setValue('nnPaymentData', $serverRequestData['data']);
                             $sessionStorage->getPlugin()->setValue('nnPaymentUrl', $serverRequestData['url']);
-							$content='';
-							$contentType='continue';
+                            //~ $content = $twig->render('Novalnet::NovalnetPaymentRedirectForm', [
+                                                                //~ 'formData'     => $serverRequestData['data'],
+                                                                //~ 'nnPaymentUrl' => $serverRequestData['url']
+                                   //~ ]);
+                                  
+$content='';
+				$contentType='continue';
                            
 
                         }
@@ -294,9 +306,11 @@ class NovalnetServiceProvider extends ServiceProvider
 					}
 				    
 				    
-				    if(in_array($paymentKey,['NOVALNET_SOFORT','NOVALNET_PRZELEWY','NOVALNET_GIROPAY','NOVALNET_EPS','NOVALNET_IDEAL','NOVALNET_PAYPAL']) || ($paymentKey == 'NOVALNET_CC' && $config->get('Novalnet.cc_3d') == 'true' || $config->get('Novalnet.cc_3d_fraudcheck') == 'true'))
+				    if(in_array($paymentKey,['NOVALNET_SOFORT','NOVALNET_PRZELEWY','NOVALNET_GIROPAY','NOVALNET_EPS','NOVALNET_IDEAL','NOVALNET_PAYPAL']) || ($paymentKey == 'NOVALNET_CC' && ($config->get('Novalnet.cc_3d') == 'true' || $config->get('Novalnet.cc_3d_fraudcheck') == 'true')))
 				    {
 						$paymentProcessUrl = $paymentService->getRedirectPaymentUrl();
+						//$paymentKey = $paymentHelper->getPaymentKeyByMop($event->getMop());
+						//$sessionStorage->getPlugin()->setValue('paymentkey', $paymentKey);
 						$event->setType('redirectUrl');
 						$event->setValue($paymentProcessUrl);
 					
