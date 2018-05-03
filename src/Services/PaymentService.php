@@ -392,7 +392,7 @@ class PaymentService
                 'key'                => $this->getkeyByPaymentKey($paymentKey),
                 'payment_type'       => $this->getTypeByPaymentKey($paymentKey)
         ];
-   $this->getLogger(__METHOD__)->error('params', $paymentRequestData); 
+  
         if(!empty($address->houseNumber))
         {
             $paymentRequestData['house_no'] = $address->houseNumber;
@@ -540,7 +540,6 @@ class PaymentService
             $postbackData['invoice_ref'] = 'BNR-' . $productId . '-' . $requestData['order_no'];
         }
         $response = $this->paymentHelper->executeCurl($postbackData, NovalnetConstants::PAYPORT_URI);
-	      $this->getLogger(__METHOD__)->error('postbackcall', $response);
     }
 
     /**
